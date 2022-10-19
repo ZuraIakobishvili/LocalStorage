@@ -1,0 +1,109 @@
+
+h1 {
+    text-align: center;
+}
+.form-control {
+    position: relative;
+}
+
+.form-group i {
+    /* position: absolute;
+    left:470px;
+    bottom:40px; */
+    visibility: hidden;
+}
+
+small {
+    visibility: hidden ;
+}
+
+.btn {
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color:#2ecc71;
+} 
+   
+    
+.form-control.success i.fa-check{
+    visibility: visible;
+    color:#2ecc71 ;
+}
+
+.form-control.success small {
+    visibility: visible;
+    color:#2ecc71;
+}
+
+.form-control.error input {
+    border-color:#e74c3c;
+    
+} 
+
+.form-control.error i.fa-circle-exclamation {
+    visibility: visible;
+    color:#e74c3c ;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color:#e74c3c;
+}
+
+
+/* responsive  */
+
+
+@media (max-width: 700px) {
+    .col-1 {
+        font-size: 7px;
+    }
+
+   .table { 
+    display: flex;
+    flex-wrap: wrap;
+   }
+  
+}
+tr:hover {
+        background-color: #f5f5f5;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+
+ 
+
+
+
+
+/*responsive*/
+
+@media(max-width: 800px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
